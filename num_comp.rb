@@ -22,11 +22,13 @@
 # compare(35, 40)
 
 def compare_class(arg1, arg2)
-	if arg1 && arg2 .is_a?(String)
+	if arg1.is_a?(arg2.class)
 		puts "true"
 	else
+		puts "false"
 	end
 end
 
 compare_class("doof","boof")
-compare_class(2, 1)
+compare_class(1, "doof")
+compare_class(1, 2)
