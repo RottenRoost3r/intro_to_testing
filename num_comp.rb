@@ -8,24 +8,25 @@
 # end
 
 
-def compare(int1, int2)
-	if int1 == int2
-		puts true
-	else
-		puts false
-	end
-end
+# def compare(int1, int2)
+# 	if int1 == int2
+# 		puts true
+# 	else
+# 		puts false
+# 	end
+# end
 
-compare(2,2)
-compare(3,4)
-compare(22,22)
-compare(35, 40)
+# compare(2,2)
+# compare(3,4)
+# compare(22,22)
+# compare(35, 40)
 
 def compare_class(arg1, arg2)
-	if arg1 && arg2 is_a? string
+	if arg1 && arg2 .is_a?(String)
 		puts "true"
 	else
 	end
 end
 
 compare_class("doof","boof")
+compare_class(2, 1)
